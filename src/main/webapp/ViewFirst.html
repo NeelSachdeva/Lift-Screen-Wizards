@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+<head>
+    <title>
+
+    </title>
+</head>
+<!--
+Method1 of rendering the page
+<lift:surround with="default" at="content">
+     this is the blah page
+    </lift:surround> -->
+
+
+<!--Method2 of rendering the page-->
+
+<div id="main" class="lift:surround?with=default;at=content">
+    <div>Hello Mr. Guest . Welcome to your Lift application.</div>
+    <div>Check out this page <a href="/param/foo">TestPage</a></div>
+    ​
+    <!--<span class="lift:embed?what=_embedme">
+      replaced with embedded content
+    </span>-->
+    ​
+    <div>
+        <ul>
+            <li>Test1:<a href="/test/test1">First Test</a></li>
+            <li>Test2: <a href="/test/test2">Second Test</a></li>
+            <li>Test3: <a href="/test/test3">Both Test</a></li>
+        </ul>
+    </div>
+</div>
+
+<body>
+
+</body>
+</html>
